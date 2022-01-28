@@ -1,0 +1,27 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ze {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double nota = sc.nextDouble();
+		int contNota = 0;
+		
+		if ( nota >= 0 &&  nota <= 10) {
+			contNota = contNota + 1;
+			
+		}
+		
+		if (nota < 0 && nota > 10) {
+			
+		}
+		
+		
+
+	}
+
+}

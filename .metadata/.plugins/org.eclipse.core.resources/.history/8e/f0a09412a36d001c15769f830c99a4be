@@ -1,0 +1,34 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+import entities.Employee;
+
+public class Program {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		Employee employee;
+		employee = new Employee();
+
+		System.out.print("Name: ");
+		employee.Name = sc.nextLine();
+
+		System.out.printf("Gross salary: %.2f%n" , employee.GrossSalary );
+		employee.GrossSalary = sc.nextDouble();
+	
+		
+		
+		// System.out.printf("Tax: ", employee.Tax);
+		// System.out.println();
+
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package entities;
+
+public class Employee {
+	
+	public String Name;
+	public double GrossSalary;
+	public double Tax;
+	public double NetSalary;
+	
+	public double NetSalary() {
+		return GrossSalary - Tax;
+	}
+	public void percentage() {
+		
+	}
+	public double IncreaseSalary() {
+		int percentage = 0;
+		return( NetSalary* percentage)/100;
+	}
+	
+	}
+				
+	
+
+

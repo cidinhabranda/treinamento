@@ -1,0 +1,34 @@
+package entities;
+
+public class Student {
+	public String nome;
+	public double notaA;
+	public double notaB;
+	public double notaC;
+	
+	
+	
+	public double somaNota() {
+		return notaA + notaB + notaC;
+		
+	}
+	public String verficaAluno() {
+		if (somaNota() >=60) {
+			return "Pass";
+			
+		}
+		return "Failed";
+		
+	}
+
+	public double alunoFailed () {
+		return 60 -somaNota();
+		
+	}
+
+}
+
+	
+	
+	
+	

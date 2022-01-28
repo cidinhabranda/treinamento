@@ -1,0 +1,34 @@
+package apllication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	private static final Object Width = null;
+	private static final Object Heitght = null;
+	private static final String Perimeter = null;
+	private static final String Diagonal = null;
+
+	public static void main(String[] args, String area) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter rectangle width and heitght:");
+		System.out.printf( "%.2fn" ,  Width);
+		System.out.printf("%.2fn", Heitght);
+	
+	
+		System.out.printf("AREA = %.2fn" + area);
+		System.out.printf("PERIMETER = %2.fn" + Perimeter);
+		System.out.printf("DIAGONAL = %2.fn" + Diagonal );
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}

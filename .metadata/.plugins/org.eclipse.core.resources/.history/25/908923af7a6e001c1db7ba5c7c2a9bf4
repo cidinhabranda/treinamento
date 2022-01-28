@@ -1,0 +1,34 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+import entities.Student;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Student student;
+		student = new Student();
+
+		student.nome = sc.nextLine();
+		//System.out.println(student.nome);
+
+		student.notaA = sc.nextDouble();
+		//System.out.printf("%.2f%n", student.notaA);
+
+		student.notaB = sc.nextDouble();
+		//System.out.printf("%.2f%n", student.notaB);
+
+		student.notaC = sc.nextDouble();
+		//System.out.printf("%.2f%n", student.notaC);
+		
+		System.out.println(student.verficaAluno());
+
+		sc.close();
+
+	}
+
+}
